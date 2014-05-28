@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="boxes" ng-controller="MainCtrl">
+    <head>
+      <meta charset="UTF-8">
+      <title>.boxes</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    </head>
+
+    <body ng-cloak>
+
+		<div class='row grid'>
+
+			<div class="col-md-9">  
+		  		<div id="fixed" when-scrolled="loadMore()">
+					<box ng-repeat="i in items"></box> 
+				</div>
+			</div>			
+
+			<div class='col-md-3'>
+				<h3>boxes created: {{length}}</h3>
+				<div class='breakdown'></div>
+			</div>			
+		</div>
+
+
+		<div class='jumbotron'>
+			<h4>	
+				<font color='red'><strong>RED:{{red}} <div class='redChart'></div></strong></font>
+				<font color='green'><strong>GREEN:{{green}} <div class='greenChart'></div></strong></font>
+				<font color='blue'><strong>BLUE:{{blue}} <div class='blueChart'></div></strong></font>
+				<font color='purple'><strong>PURPLE:{{purple}} <div class='purpleChart'></div></strong></font>
+				<font color='orange'><strong>ORANGE:{{orange}} <div class='orangeChart'></div></strong></font>
+				<font color='#999900' ><strong>YELLOW:{{yellow}} <div class='yellowChart'></div></strong></font>
+			</h4>
+		</div>
+		<script src="lib/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+		<script src="app.js"></script>
+
+    </body>
+
+</html>

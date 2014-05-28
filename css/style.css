@@ -1,0 +1,61 @@
+.chart rect {
+  fill: steelblue;
+  stroke: white;
+}
+
+
+.jumbotron {
+    border: 1px dotted black;
+}
+
+.breakdown {
+  padding-top:30px;
+}
+
+.row {
+  width:100%;
+
+}
+
+#fixed {
+    height: 450px;
+   /* width:850px;*/
+    overflow: auto;
+    margin-bottom:25px;
+    margin-top:25px;
+    margin-left:25px;
+    border: 1px solid black;
+}
+
+.grid {
+    margin:auto;
+    text-align: center;
+    margin-bottom:10px;
+
+
+}
+
+.box {
+    float: left;
+    width: 2%;
+    box-sizing: border-box;
+    border: solid 1px black;
+    padding-top: 2%;
+}
+
+.box.current {
+   box-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+.box.clear {background: white;}
+.box.red { background: #e74c3c; }
+.box.orange { background: #f39c12; }
+.box.yellow { background: #f1c40f; }
+.box.green { background: #27ae60; }
+.box.blue { background: #2980b9; }
+.box.purple { background: #9b59b6; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.jqstooltip { box-sizing: content-box;}

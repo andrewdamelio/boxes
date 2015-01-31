@@ -3,4 +3,4 @@ boxes
 
 AngularJS live data sandbox
 <br /> 
-<a href='http://bittopia.ca/dev/boxes'>Demo</a>
+<a href='http://andrewdamel.io/dev/boxes/'>Demo</a>
